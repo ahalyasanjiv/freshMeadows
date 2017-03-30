@@ -1,1 +1,1 @@
-Neighborhood Page for Fresh Meadows: https://ahalyasanjiv.github.io/freshMeadows/#listComplaints
+Neighborhood Page for Fresh Meadows: https://ahalyasanjiv.github.io/freshMeadows/
