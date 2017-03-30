@@ -1,28 +1,98 @@
 <!doctype html>
 <html>
 <head>
-	<title>Fresh Meadows</title>
+	<title></title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     
 
+	    
+
 </head>
-<style type="text/css">
-	body{
-
-   	background-color: #5CC1AF; 
-
-	}
-
-	h1{
-		font-family: Abel;
-		font-size:28px;
-		color:#FFFFFF;
-	}
-</style>
 
 <body>
-	<h1>Fresh Meadows</h1>
+
+	<script type="text/javascript">
+		$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	        || location.hostname == this.hostname) {
+
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	           if (target.length) {
+	             $('html,body').animate({
+	                 scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	        }
+	    }
+		});
+	</script>
+	
+	<div id="content">
+	<div id="upperbox">
+		<h1>FRESH MEADOWS</h1>
+		<a class= "topMenu" href="#demographics">DEMOGRAPHICS & STATISTICS</a>
+		<a class= "topMenu" href="#mapofFM">MAP OF FRESH MEADOWS</a>
+		<a class= "topMenu" href="#Parking">TOP TEN PARKING TICKETS</a>
+		<a class= "topMenu" href="#complaintsMap">MAP OF 311 COMPLAINTS IN THE NEIGHBORHOOD</a>
+		<a class= "topMenu" id="lastMenu" href="#listComplaints">BIGGEST 311 COMPLAINTS</a>
+	</div>
+	
+	<br><br><br><br><br><br><br>
+		
+	<br><br><br><br>
+	<div id = "demographics" class = "headerBox"><h2>DEMOGRAPHICS & STATISTICS</h2></div>
+		<ul>
+			<li><h3>Population: </h3>55,784</li>
+			<li><h3>Population density: </h3>12,362 people per sq. mi.</li>
+			<li><h3>Population by races: </h3>Asian population: 24.5% Hispanic population: 29.7% Black population: 1.9% White population: 56.9%</li>
+			<li><h3>Sex Ratio: </h3> Male:Female : 48.6:51.4</li>
+		</ul>
+
+	<div id = "mapofFM" class = "headerBox"><h2>MAP OF FRESH MEADOWS</h2></div>
+
+	<a href="freshMeadowsMap.geojson"><i>GeoJSON File</i></a>
+	<br>
+	<img id = "picture"src="mapOfFreshMeadows.png">
+	
+	<br><br>
+	<div id = "Parking" class = "headerBox"><h2>TOP TEN PARKING TICKETS</h2></div>
+	<ol>
+		<li>91445JV: 143 tickets</li>
+		<li>88700JA: 105 tickets</li>
+		<li>88808JA: 105 tickets</li>
+		<li>MY2015: 99 tickets</li>
+		<li>1757735: 97 tickets</li>
+		<li>62480JM: 80 tickets</li>
+		<li>63593MC: 78 tickets</li>
+		<li>86011JV: 76 tickets</li>
+		<li>K26671K: 70 tickets</li>
+		<li>61243MA: 67 tickets</li>
+	</ol>
+	<br><br>
+	<div id = "complaintsMap"class = "headerBox"><h2>MAP OF 311 COMPLAINTS IN THE NEIGHBORHOOD</h2></div>
+	<br>
+	<iframe src="service_requests.html" style=" text-align:center; width: 60%; height: 400px"></iframe>
+	<br><br>
+	<div id = "listComplaints"class = "headerBox"><h2>BIGGEST 311 COMPLAINTS</h2></div>
+	<ol>
+		<li>Noise - Residential: 3441 complaints</li>
+		<li>Damaged Tree: 3320 complaints</li>
+		<li>Street Light Condition: 3298 complaints</li>
+		<li>Illegal Parking: 2472 complaints</li>
+		<li>Blocked Driveway: 2246 complaints</li>
+		<li>Water System: 2139 complaints</li>
+		<li>Sewer: 1649 complaints</li>
+		<li>Missed Collection (All Materials): 1256 complaints</li>
+		<li>Derelict Vehicle: 1249 complaints</li>
+		<li>Building/Use: 1155 complaints</li>
+	</ol>
+	</div>
 </body>
 </html>
