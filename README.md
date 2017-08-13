@@ -1,1 +1,1 @@
-Neighborhood Page for Fresh Meadows: https://ahalyasanjiv.github.io/freshMeadows/
+Neighborhood Page for Fresh Meadows
